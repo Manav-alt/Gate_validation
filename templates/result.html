@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h2>Form Data</h2>
+    <ul>
+        {% for field, value in form_data.items() %}
+            <li><strong>{{ field }}:</strong> {{ value }}</li>¸
+        {% endfor %}
+    </ul>
+
+    <h2>Extracted Data from Image</h2>
+    <ul>
+        {% for field, value in image_data.items() %}
+            <li><strong>{{ field }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
