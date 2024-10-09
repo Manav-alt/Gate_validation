@@ -5,7 +5,7 @@ import pandas as pd
 from prettytable import PrettyTable
 
 # Load the image
-image_path = 'images/Scorecard.jpeg'  # Replace with your image path
+image_path = 'images/Scorecard3.jpeg'  # Replace with your image path
 image = cv2.imread(image_path)
 
 # Convert to grayscale

@@ -11,7 +11,7 @@ def preprocess_image(image_path):
     gray_img = img.convert('L')
 
     # Apply thresholding to binarize the image (removing noise)
-    threshold_img = gray_img.point(lambda p: p > 150 and 255)
+    threshold_img = gray_img.point(lambda p: p > 200 and 255)
 
     # Resize the image for better OCR accuracy (optional)
     resized_img = threshold_img.resize((threshold_img.width * 2, threshold_img.height * 2), Image.Resampling.LANCZOS)
@@ -54,7 +54,7 @@ def extract_info(text):
 # Main function to process the GATE scorecard
 def main():
     # Path to the scorecard image
-    image_path = "images/Scorecard8.jpg"
+    image_path = "/Users/manavpathak/Gate_Validation/images/Scorecard3.jpeg"
 
     # Extract text from the image
     extracted_text = extract_text_from_image(image_path)
