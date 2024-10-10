@@ -7,6 +7,8 @@ import pandas as pd
 import math
 from io import BytesIO
 
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 try:
     from temp import (
         bw_scanner,
