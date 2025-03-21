@@ -1,9 +1,10 @@
 from pymongo import MongoClient
 
-# MongoDB setup
+
 def get_database():
 
-    client = MongoClient('mongodb+srv://<username>:<password>@cluster0.kkx1y.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+   
+    client = MongoClient('mongodb+srv://pathakaman377:sejal123@cluster0.rfsg4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     db = client['gate_ocr_db']  # Database name
     return db
 
